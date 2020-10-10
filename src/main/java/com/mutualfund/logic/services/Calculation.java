@@ -50,6 +50,7 @@ public class Calculation {
         endCalendar.setTime(endDate);
 
         System.out.println("Months       Returns               Calculations");
+        System.out.println("------       -------               ------------");
 
         for(; startCalender.compareTo(endCalendar)<=0; startCalender.add(Calendar.MONTH, 1))
             printValues(c,startCalender,period);
