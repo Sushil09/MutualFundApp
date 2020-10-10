@@ -12,7 +12,7 @@ import static java.lang.String.format;
 public class Calculation {
     static Map<String,Double> valuesDatabase;//to map nav values to date
 
-    public static void callRestService(String schemaNumber,int period,int horizon) throws Exception{
+    public void callRestService(String schemaNumber,int period,int horizon) throws Exception{
         String url="https://api.mfapi.in/mf/"+schemaNumber; //api hit url
 
         RestTemplate restTemplate=new RestTemplate();
